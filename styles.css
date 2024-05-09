@@ -1,0 +1,90 @@
+@import url(/Fontawesome/css/fontawesome.min.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: 'Charkra Petch', Times, serif;
+}
+
+.navbar {
+  background-color: #21282C;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left img {
+  height: 15vh;
+  width: 15vh;
+  margin: 0 50px;
+  cursor: pointer;
+}
+
+.checkBtn {
+  display: none;
+  margin-right: 100px;
+  cursor: pointer;
+  font-size: 30px;
+  float: right;
+  color: #63b1c7;
+  line-height: 80px;
+}
+
+#check {
+  display: none;
+}
+
+.right ul {
+  display: flex;
+  margin: 0px 50px;
+  list-style: none;
+}
+
+.right ul li a {
+  padding: 10px 20px;
+  margin: 0px 10px;
+  font-size: 1.2rem;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ff9410;
+  transition: all 1s;
+}
+
+.right ul li a:hover {
+  background-color: #fff;
+  border-radius: 7px;
+  color: #21282C;
+}
+
+@media screen and (max-width:805px) {
+  .list {
+    width: 100%;
+    height: 80vh;
+    background-color: #21282C;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    justify-content: space-evenly;
+    top: 7rem;
+    left: 100%;
+    transition: all 1s;
+  }
+
+  #check {
+    display: none;
+  }
+
+  .checkBtn {
+    display: block;
+  }
+
+  #check:checked~ul {
+    left: 0%;
+  }
+}
