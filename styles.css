@@ -51,13 +51,13 @@
   text-decoration: none;
   border-style: solid;
   border-width: 1px;
+  border-radius: 30px;
   border-color: #ff9410;
   transition: all 1s;
 }
 
 .right ul li a:hover {
   background-color: #fff;
-  border-radius: 7px;
   color: #21282C;
 }
 
